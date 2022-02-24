@@ -13,7 +13,6 @@ GitHub Viewer AiMovie
 <p align="center">
 <img src="data/img_1.png" width="32%"/>
 <img src="data/img_2.png" width="32%"/>
-<img src="data/img_3.png" width="32%"/>
 <img src="data/video_2022-02-24_23-53-34.gif" width="32%"/>
 </p>
 
