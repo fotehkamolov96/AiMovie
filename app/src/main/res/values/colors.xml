@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: main colors -->
+    <color name="color_status_bar">#070417</color>
+    <color name="color_navigation_bar">#070417</color>
+    <color name="color_background">#121228</color>
+    <color name="color_card_background_four">#363A43</color>
+    <color name="transparent" />
+
+    <!-- TODO: main text color. -->
+    <color name="color_text_white">#ffffff</color>
+    <color name="color_text_darkblue">#0033A0</color>
+    <color name="lightStroke">#1A63656C</color>
+    <color name="color_text_blue">#0C8DF7</color>
+    <color name="color_text_amber">#FF6F00</color>
+    <color name="color_text_cyan">#E600838F</color>
+    <color name="color_text_grey">#a5b4cb</color>
+    <color name="color_text_inactive">#805C606C</color>
+    <color name="color_text_lightStroke">#1A63656C</color>
+    <color name="color_text_colorDivider">#403D4047</color>
+    <color name="color_text_ultralightStroke">#0863656C</color>
+    <color name="color_card_background">#1B182D</color>
+    <color name="color_card_background_two">#363A43</color>
+    <color name="color_card_background_three">#272C3A</color>
+    <color name="color_card_background_five">#0F1423</color>
+
+</resources>

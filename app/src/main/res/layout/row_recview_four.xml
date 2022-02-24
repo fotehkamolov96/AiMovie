@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_top_rated_movies"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_toolbar52">
+
+            <TextView
+                android:id="@+id/tv_top_rated_movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin12"
+                android:paddingTop="@dimen/standard_card_padding12"
+                android:paddingBottom="@dimen/standard_card_padding8"
+                android:textColor="@color/color_text_white"
+                android:textSize="@dimen/item_text_size18"
+                android:text="@string/top_rated_movies"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/cl_top_rated_movies"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/cl_top_rated_movies" />
+
+            <ImageView
+                android:id="@+id/tv_top_rated_movies_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/standard_margin18"
+                android:src="@drawable/ic_baseline_read_more_24"
+                app:layout_constraintBottom_toBottomOf="@id/cl_top_rated_movies"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/cl_top_rated_movies" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/standard_card_padding4"
+            android:paddingEnd="@dimen/standard_card_padding4">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_top_rated_movies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/standard_card_padding4"
+                android:paddingEnd="@dimen/standard_card_padding4"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_list" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

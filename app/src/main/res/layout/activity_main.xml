@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_status_bar"
+        app:elevation="@dimen/elevation">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_biology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_status_bar"
+            android:elevation="@dimen/elevation"
+            android:maxLines="1"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextColor="@color/material_grey_50">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/examToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_toolbar54"
+                android:background="@color/color_status_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/not_click"
+                    android:layout_width="@dimen/standart_icon_not"
+                    android:layout_height="@dimen/standart_icon_notif"
+                    android:layout_marginEnd="@dimen/standard_margin4"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/standard_card_padding2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_ai_ic_notifcation" />
+
+                <TextView
+                    android:id="@+id/name_subs"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/app_name"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/color_text_grey"
+                    android:textSize="@dimen/item_text_size26"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_margin4" />
+
+                <include layout="@layout/row_recview_one" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_margin14" />
+
+                <include layout="@layout/row_recview_two" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_margin14" />
+
+                <include layout="@layout/row_recview_three" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_margin14" />
+
+                <include layout="@layout/row_recview_four" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_margin24" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>
